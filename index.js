@@ -190,6 +190,7 @@ io.on("connection", (socket) => {
             sender: socket.userId,
             recipient: recipient,
             _id: messageDoc._id,
+            createdAt: messageDoc.createdAt,
           })
         );
     }
